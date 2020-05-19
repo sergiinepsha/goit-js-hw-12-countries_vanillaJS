@@ -17,7 +17,7 @@ export default function (target) {
     .then(data => {
       clear();
       if (data.length > 10) {
-        errorPnotify();
+        errorPnotify('Too many matches found. Please enter a more specific query!');
       }
       if (data.length >= 2 && data.length <= 10) {
         noticePnotify();

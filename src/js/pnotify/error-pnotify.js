@@ -6,10 +6,10 @@ import '@pnotify/core/dist/BrightTheme.css';
 import * as Confirm from '@pnotify/confirm';
 import '@pnotify/confirm/dist/PNotifyConfirm.css';
 
-export default function () {
+export default function (message) {
   error({
     title: 'Warning!',
-    text: 'Too many matches found. Please enter a more specific query!',
+    text: message,
     modules: new Map([
       [
         Confirm,
