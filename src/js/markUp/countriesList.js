@@ -13,6 +13,6 @@ export default function (data) {
  * creating countries list
  */
 function createCountriesList(data) {
-  const countriesItems = data.map(country => `<li>${country.name}</li>`);
+  const countriesItems = data.map(({ name }) => `<li>${name}</li>`);
   return countriesItems.join('');
 }
